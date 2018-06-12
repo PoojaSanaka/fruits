@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Style the header */
+.header {
+    padding: 30px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+  background-image: url("C:/Users/Gajula/Desktop/images/img.jpg");
+
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+    font-size: 40px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+
+}
+
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 10px;
+    text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus,.dropdown1:hover .dropbtn1, .dropbtn1:focus {
+    background-color: red;
+}
+.row {  
+    display: flex;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    overflow-y:scroll;
+    height:800px;
+    font-family: sans-serif;
+    color:white;
+  background-image: url("C:/Users/Gajula/Desktop/images/img1.jpg");
+
+}
+
+/* Main column */
+.main {   
+    flex: 70%;
+    background-color:aliceblue;
+    padding: 5px;
+        width: 1000px;
+}
+
+.main a {
+    background-color:blanchedalmond;
+    color:forestgreen;
+    display: block;
+    border-style:solid;
+    padding: 40px;
+    text-decoration: none;
+    text-align: center;
+    font-size:40px;
+}
+
+.main a:hover {
+    background-color: #ccc;
+}
+
+.main a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.dropdown,.dropdown1 {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn,.dropdown1 .dropbtn1 {
+    cursor: pointer;
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content,.dropdown-content1  {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a,.dropdown-content1 a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown-content1 a:hover {
+    background-color: #ddd;
+}
+
+
+.show {
+    display: block;
+}
